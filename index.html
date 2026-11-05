@@ -88,17 +88,32 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="section bg-light">
-        <h2>Get In Touch</h2>
-        <div class="contact-container">
-            <p>Feel free to reach out for collaborations or technical discussions!</p>
-            <div class="social-links">
-                <a href="https://github.com/amirgoback-hash" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
-                <a href="#" target="_blank" class="social-icon"><i class="fab fa-linkedin"></i></a>
-                <a href="mailto:your-email@example.com" class="social-icon"><i class="fas fa-envelope"></i></a>
+<section id="contact" class="section bg-light">
+    <h2>Get In Touch</h2>
+    <div class="contact-container">
+        <p>Feel free to reach out for collaborations, technical discussions, or just to say hi!</p>
+        
+        <!-- Interactive Contact Form -->
+        <form class="contact-form" action="https://formsubmit.co/your-email@example.com" method="POST">
+            <div class="form-group">
+                <input type="text" name="name" placeholder="Your Name" required>
             </div>
+            <div class="form-group">
+                <input type="email" name="email" placeholder="Your Email" required>
+            </div>
+            <div class="form-group">
+                <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+            </div>
+            <button type="submit" class="btn primary submit-btn"><i class="fas fa-paper-plane"></i> Send Message</button>
+        </form>
+
+        <div class="social-links">
+            <a href="https://github.com/amirgoback-hash" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
+            <a href="#" target="_blank" class="social-icon"><i class="fab fa-linkedin"></i></a>
+            <a href="mailto:your-email@example.com" class="social-icon"><i class="fas fa-envelope"></i></a>
         </div>
-    </section>
+    </div>
+</section>
 
     <!-- Footer -->
     <footer>

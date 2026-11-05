@@ -502,3 +502,43 @@ footer {
     box-shadow: 0 0 25px rgba(56, 189, 248, 0.4);
     transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
+/* Contact Form Styling */
+.contact-container {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.contact-form {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 0.9rem 1.2rem;
+    background: #0f172a;
+    border: 1px solid #334155;
+    border-radius: 8px;
+    color: #e2e8f0;
+    font-size: 1rem;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #38bdf8;
+    box-shadow: 0 0 10px rgba(56, 189, 248, 0.2);
+}
+
+.submit-btn {
+    width: 100%;
+    justify-content: center;
+    cursor: pointer;
+    border: none;
+    font-size: 1rem;
+}
