@@ -43,3 +43,26 @@ window.onclick = function(event) {
         closeModal();
     }
 };
+// Dark/Light Theme Toggle Logic
+const themeToggleBtn = document.getElementById('theme-toggle');
+const themeIcon = document.getElementById('theme-icon');
+const bodyElement = document.body;
+
+// Check for saved user preference in localStorage
+const savedTheme = localStorage.getItem('theme');
+if (savedTheme === 'light') {
+    bodyElement.classList.add('light-mode');
+    themeIcon.classList.replace('fa-moon', 'fa-sun');
+}
+
+themeToggleBtn.addEventListener('click', () => {
+    bodyElement.classList.toggle('light-mode');
+    
+    if (bodyElement.classList.contains('light-mode')) {
+        themeIcon.classList.replace('fa-moon', 'fa-sun');
+        localStorage.setItem('theme', 'light');
+    } else {
+        themeIcon.classList.replace('fa-sun', 'fa-moon');
+        localStorage.setItem('theme', 'dark');
+    }
+});

@@ -421,3 +421,67 @@ footer {
     color: #64748b;
     border-top: 1px solid #1e293b;
 }
+/* Light Theme Variables */
+body.light-mode {
+    background-color: #f8fafc;
+    color: #0f172a;
+}
+
+body.light-mode header {
+    background: rgba(248, 250, 252, 0.9);
+    border-bottom: 1px solid #e2e8f0;
+}
+
+body.light-mode .card,
+body.light-mode .project-card,
+body.light-mode .modal-content,
+body.light-mode .skill-badge,
+body.light-mode .social-icon {
+    background: #ffffff;
+    border-color: #cbd5e1;
+    color: #1e293b;
+}
+
+body.light-mode .hero {
+    background: linear-gradient(to bottom, #f1f5f9, #e2e8f0);
+}
+
+body.light-mode .bio,
+body.light-mode nav a,
+body.light-mode .project-card p {
+    background: transparent;
+    color: #475569;
+}
+
+body.light-mode .form-group input,
+body.light-mode .form-group textarea {
+    background: #ffffff;
+    border-color: #cbd5e1;
+    color: #0f172a;
+}
+
+/* Theme Toggle Button Style */
+.theme-btn {
+    background: #1e293b;
+    border: 1px solid #334155;
+    color: #38bdf8;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 1.5rem;
+    transition: all 0.3s ease;
+}
+
+body.light-mode .theme-btn {
+    background: #e2e8f0;
+    border-color: #cbd5e1;
+    color: #0284c7;
+}
+
+.theme-btn:hover {
+    transform: scale(1.1);
+}
