@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume - Md. Amir Hamza</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --bg-color: #0d1117;
+            --card-bg: #161b22;
+            --text-color: #c9d1d9;
+            --heading-color: #58a6ff;
+            --accent-color: #1f6feb;
+            --border-color: #30363d;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 40px 20px;
+            line-height: 1.6;
+        }
+
+        .resume-container {
+            max-width: 850px;
+            margin: 0 auto;
+            background: var(--card-bg);
+            padding: 40px;
+            border-radius: 12px;
+            border: 1px solid var(--border-color);
+            box-shadow: 0 8px 24px rgba(0,0,0,0.5);
+        }
+
+        .header {
+            text-align: center;
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+
+        .header h1 {
+            color: #ffffff;
+            margin: 0 0 5px 0;
+            font-size: 2.2rem;
+        }
+
+        .header h3 {
+            color: var(--heading-color);
+            margin: 0 0 15px 0;
+            font-weight: 400;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            font-size: 0.95rem;
+        }
+
+        .contact-info a, .contact-info span {
+            color: var(--text-color);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .contact-info a:hover {
+            color: var(--heading-color);
+        }
+
+        .section {
+            margin-bottom: 30px;
+        }
+
+        .section-title {
+            color: var(--heading-color);
+            font-size: 1.3rem;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .item {
+            margin-bottom: 15px;
+        }
+
+        .item-header {
+            display: flex;
+            justify-content: space-between;
+            font-weight: bold;
+            color: #ffffff;
+        }
+
+        .item-sub {
+            color: var(--heading-color);
+            font-style: italic;
+            font-size: 0.95rem;
+            margin-bottom: 5px;
+        }
+
+        ul {
+            margin: 5px 0 0 20px;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 5px;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+        }
+
+        .skill-category strong {
+            color: #ffffff;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .btn-container {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .btn-download {
+            background-color: var(--accent-color);
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1rem;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .btn-download:hover {
+            background-color: #388bfd;
+        }
+
+        @media print {
+            body {
+                background-color: #ffffff;
+                color: #000000;
+                padding: 0;
+            }
+            .resume-container {
+                border: none;
+                box-shadow: none;
+                background: #ffffff;
+                color: #000000;
+                padding: 0;
+            }
+            .header h1, .item-header {
+                color: #000000;
+            }
+            .header h3, .section-title, .item-sub {
+                color: #0056b3;
+            }
+            .btn-container {
+                display: none;
+            }
+            a {
+                color: #000000 !important;
+                text-decoration: none;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="btn-container">
+        <button class="btn-download" onclick="window.print()"><i class="fas fa-print"></i> Download / Print PDF</button>
+    </div>
+
+    <div class="resume-container">
+        <div class="header">
+            <h1>Md. Amir Hamza</h1>
+            <h3>ICT Demonstrator | AI & Software Developer | IT Officer</h3>
+            <div class="contact-info">
+                <span><i class="fas fa-envelope"></i> amirgoaback@gmail.com</span>
+                <a href="https://github.com/amirgoback-hash" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                <a href="https://amirgoback-hash.github.io/Portfolio/" target="_blank"><i class="fas fa-globe"></i> Portfolio</a>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">Career Objective</div>
+            <p>Dedicated and goal-driven Computer Science graduate seeking challenging opportunities in <strong>Artificial Intelligence, Software Engineering, and IT Operations</strong>. Aiming to leverage strong technical competencies in Web/App Development, System Automation, and Data Infrastructure to build scalable digital solutions and optimize IT organizational workflows.</p>
+        </div>
+
+        <div class="section">
+            <div class="section-title">Experience</div>
+            <div class="item">
+                <div class="item-header">
+                    <span>ICT Demonstrator</span>
+                    <span>Present</span>
+                </div>
+                <div class="item-sub">Rajuk Uttara Model College</div>
+                <ul>
+                    <li>Conducting practical sessions in computer science and ICT fundamentals for students.</li>
+                    <li>Managing and optimizing computing facilities, workstation configurations, and lab networking setups.</li>
+                    <li>Automating lab maintenance routines and environment deployments to ensure 100% operational uptime.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">Education</div>
+            <div class="item">
+                <div class="item-header">
+                    <span>M.Sc in Information Technology (PMIT)</span>
+                    <span>Ongoing</span>
+                </div>
+                <div class="item-sub">Jahangirnagar University (JU)</div>
+                <p>Secured 2nd Merit Position in the competitive entry assessment.</p>
+            </div>
+            <div class="item">
+                <div class="item-header">
+                    <span>B.Sc in Computer Science and Engineering (CSE)</span>
+                    <span>Graduated</span>
+                </div>
+                <div class="item-sub">Daffodil International University — CGPA: 3.26 / 4.00</div>
+            </div>
+            <div class="item">
+                <div class="item-header">
+                    <span>Higher Secondary Certificate (HSC)</span>
+                    <span>Completed</span>
+                </div>
+                <div class="item-sub">BAF Shaheen College Dhaka — GPA: 4.92 / 5.00</div>
+            </div>
+            <div class="item">
+                <div class="item-header">
+                    <span>Secondary School Certificate (SSC)</span>
+                    <span>Completed</span>
+                </div>
+                <div class="item-sub">Momena Ali Biggan School — GPA: 5.00 / 5.00</div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">Key Projects</div>
+            <div class="item">
+                <div class="item-header">MindFlow — Student Productivity & Decision App</div>
+                <ul>
+                    <li>Architected a modular decision-making system designed to improve student consistency and routine management.</li>
+                </ul>
+            </div>
+            <div class="item">
+                <div class="item-header">Real-time Chess Club Management System</div>
+                <ul>
+                    <li>Engineered a dynamic Flutter mobile application integrated with Firebase Firestore for club operations and live rankings.</li>
+                </ul>
+            </div>
+            <div class="item">
+                <div class="item-header">ICT Lab Automation Suite</div>
+                <ul>
+                    <li>Developed custom Bash & Linux automation scripts to streamline workstation setup and system recovery.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">Technical Skills</div>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <strong>Languages & Web:</strong>
+                    HTML5, CSS3, JavaScript (ES6+), Python, Dart
+                </div>
+                <div class="skill-category">
+                    <strong>Frameworks & Tools:</strong>
+                    Flutter, Firebase Firestore, Git & GitHub
+                </div>
+                <div class="skill-category">
+                    <strong>Systems & IT:</strong>
+                    Linux Administration, Bash Scripting, Network Setup
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
